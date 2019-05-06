@@ -18,3 +18,7 @@ Route::get('/', 'TestController@welcome')->name('welcome');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin/products', 'ProductController@index'); // lista
+Route::get('/admin/products/create', 'ProductController@create'); // crea
+Route::post('/admin/products', 'ProductController@store'); // guarda nuevo
+/* Route::get('/admin/products', 'ProductController@index'); */
