@@ -19,6 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin/products', 'ProductController@index'); // lista
-Route::get('/admin/products/create', 'ProductController@create'); // crea
-Route::post('/admin/products', 'ProductController@store'); // guarda nuevo
+Route::get('/admin/products/create', 'ProductController@create'); // Crea
+Route::post('/admin/products', 'ProductController@store'); // Guarda
+Route::get('/admin/products/{id}/edit', 'ProductController@edit'); // Edita
+Route::post('/admin/products/{id}/edit', 'ProductController@update'); // Actualiza
+Route::delete('/admin/products/{id}', 'ProductController@destroy'); // Edita
+
 /* Route::get('/admin/products', 'ProductController@index'); */
