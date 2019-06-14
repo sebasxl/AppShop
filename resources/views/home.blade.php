@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <button type="button" class="btn btn-danger btn-lg"><i class="fas fa-shopping-cart"></i> Carrito de Compras</button>
+                    <button type="button" class="btn btn-warning btn-lg"><i class="far fa-list-alt"></i> Pedidos realizados</button>
                 </div>
             </div>
         </div>

@@ -14,7 +14,7 @@
                 <div class="card-header">
                     {{ $product->category->name }}
                 </div>
-                <img src="{{ $product->images->first()->image }}" class="card-img-top" alt="...">
+                <img src="{{ $product->featured_image_url }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ $product->name }}</h5>
                     <p class="card-text">{{ $product->description }}</p>

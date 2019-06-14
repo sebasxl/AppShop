@@ -9,12 +9,12 @@
         <table class="table">
             <thead>
                 <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Descripcion</th>
-                <th scope="col">Categoría</th>
-                <th scope="col">precio</th>
-                <th scope="col">Acciones</th>
+                <th scope="col" class="text-center">#</th>
+                <th scope="col" class="col-md-2 text-center">Nombre</th>
+                <th scope="col" class="col-md-4 text-center">Descripcion</th>
+                <th scope="col" class="text-center">Categoría</th>
+                <th scope="col" class="text-right">precio</th>
+                <th scope="col" class="text-right">Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -30,6 +30,7 @@
                         <form action="{{ url('/admin/products/'.$product->id) }}" method="post">
                         @csrf
                         <a href="#" class="btn btn-sm btn-outline-info"><i class="fas fa-info-circle"></i></a>
+                        <a href="{{ url('/admin/products/'.$product->id.'/images')}}" class="btn btn-sm btn-outline-warning"><i class="fas fa-image"></i></a>
                         <a href="{{ url('/admin/products/'.$product->id.'/edit') }}" class="btn btn-sm btn-outline-warning"><i class="fas fa-edit"></i></a>
                         {{ method_field('DELETE')}}
                             <button type="submit" class="btn btn-sm btn-outline-danger"><i class="far fa-trash-alt"></i></button>
