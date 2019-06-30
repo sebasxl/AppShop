@@ -62,6 +62,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     @if(auth()->user()->admin)
+                                        <a class="dropdown-item" href="{{ route('home')}}">Dashboard</a>
                                         <a class="dropdown-item" href="{{ route('createproducts')}}">Nuevo Producto</a>
                                         <a class="dropdown-item" href="{{ route('adminproducts') }}">Gestionar Productos</a>
                                     @endif

@@ -40,7 +40,7 @@
                 </tr>
             @endforeach
             </tbody>
-            </table>
+        </table>
 
             {{ $products->links() }}
     </div>

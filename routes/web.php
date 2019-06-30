@@ -13,10 +13,13 @@
 */
 
 Route::get('/', 'TestController@welcome')->name('welcome');
+Route::get('/products/{id}', 'TestController@show')->name('show');
 
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/cart', 'CartDetailController@store');
 
 
 Route::middleware(['auth','admin'])->prefix('admin')->group(function() {
